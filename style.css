@@ -1,0 +1,21 @@
+body{
+    background-image: url("background.jpg");
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+ }
+#spinner {
+    display: none;
+}
+.col{
+    margin-bottom: 50px;
+}
+span{
+    color: blue;
+}
+.all-cards{
+    border: 5px solid rgb(0, 217, 255);
+    border-radius: 10px;
+}
+.all-cards:hover{
+    transform: translateY(0) scale(1.1);
+}

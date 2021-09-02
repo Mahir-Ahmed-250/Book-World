@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book World</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Raw CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-center text-warning mt-5">Welcome To The World of Books!</h1>
+    </header>
+    <main>
+        <!-- Search Input -->
+        <h3 class="text-center text-warning mt-5">Search Your Favourite Book!</h3>
+        <div class="input-group mb-3 w-25 mx-auto">
+            <input id="search-field" type="text" class="form-control" placeholder="Search Book!"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchBook()" class="btn btn-primary text-dark " type="button"
+                id="button-search">Search</button>
+        </div>
+        <!-- Spiner -->
+        <div class="text-center" id='spinner'>
+            <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+        <!-- Error -->
+        <div id="error" class=" w-25 text-center mx-auto alert alert-primary" role="alert" style="display: none;">
+            No Result Found!
+        </div>
+
+        <!-- search Found -->
+        <div>
+            <h2 class="text-center mt-3 mb-3 text-warning" id="total-result"></h2>
+        </div>
+
+        <!-- search Result -->
+        <div id="book-result">
+            <div id='search-result'
+                class="row row-cols-1 row-cols-sm-1 row-cols-lg-3 g-5 mt-5 input-group mb-3 w-100 mx-auto container">
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Raw JavaScript -->
+    <script src=" book.js"></script>
+</body>
+
+</html>
