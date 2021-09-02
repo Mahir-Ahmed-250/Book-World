@@ -16,6 +16,3 @@ span{
     border: 5px solid rgb(0, 217, 255);
     border-radius: 10px;
 }
-.all-cards:hover{
-    transform: translateY(0) scale(1.1);
-}
